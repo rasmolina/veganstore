@@ -1,0 +1,38 @@
+p{
+    color: white;
+    text-align: justify;
+    font-style: normal;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.aboutus{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.product-image {
+    display: inline-block;
+    max-width: 150px;
+    margin: 10px;
+}
+
+.btn {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+.btn button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    white-space: nowrap;
+  }
+  

@@ -1,0 +1,13 @@
+.product-red-btn {
+    height: 15px;
+    width: 15px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.product-red-btn img {
+    width: 20px;
+}
