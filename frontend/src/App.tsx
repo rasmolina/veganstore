@@ -2,6 +2,7 @@ import { ToastContainer } from 'react-toastify';
 import AppRoutes from './AppRoutes';
 import Header from "./components/Header";
 
+
 function App() {
   return (
     <>
@@ -12,7 +13,7 @@ function App() {
             <AppRoutes />
           </div>
         </section>
-      </main>
+      </main>      
     </>
   )
 }

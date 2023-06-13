@@ -6,9 +6,10 @@ function Header() {
         <header>
         <div className="logo-container">
                 <img src={logo} alt="logo" />
-            <div>
-                <p>Desenvolvido por Pedro Zoia | Roberto Molina | Vinicius Laroza</p>
+                <div>
+                <p>Desenvolvido por Pedro Zoia | Roberto Molina | Vinicius Laroza</p>                
             </div>
+            
         </div>
         </header>
     )

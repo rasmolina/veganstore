@@ -13,6 +13,7 @@ import { Link } from 'react-router-dom';
 
 function Customers() {
     const [show, setShow] = useState(false);
+    const [showSuccessMessage, setShowSuccessMessage] = useState(false)
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
 
@@ -42,13 +43,28 @@ function Customers() {
 
         api
             .post(`/customer/save`, customerToSave)
+            .then(response => {
+                console.log("Posting data: ", response);
+                setShow(false);
+                window.location.reload();
+                setShowSuccessMessage(true); // Exibir mensagem de sucesso ao inserir o cliente
+                setTimeout(() => setShowSuccessMessage(false), 3000); // Ocultar mensagem de sucesso após 3 segundos
+            })
+            .catch((err) => {
+                console.error("Ops! Ocorreu um erro!" + err);
+            });
+    };
+
+        /*api
+            .post(`/customer/save`, customerToSave)
             .then(response => console.log("Posting data: ", response))
             .catch((err) => {
                 console.error("Ops! Ocorreu um erro!" + err);
             });
         setShow(false);
+        
         window.location.reload();
-    };
+    };*/
 
 
     const [customers, setCustomers] = useState<Customer[]>([]);

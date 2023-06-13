@@ -12,7 +12,7 @@
     <artifactId>veganStore</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>veganStore</name>
-    <description>Vegan store project developed in the discipline of Software Project Management.</description>
+    <description>Vegan store project developed in the discipline of PW3.</description>
     <properties>
         <java.version>11</java.version>
     </properties>
